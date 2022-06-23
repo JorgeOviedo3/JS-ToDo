@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(#5408ff, #190069);
+  font-family: "Comfortaa";
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: block;
+  height: 0px;
+}
+
+.app {
+  width: 500px;
+  height: auto;
+  position: relative;
+  background-color: #080617;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #080617;
+  margin: 30px;
+}
+.todotitle {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+  background-color: #11111c;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newtaskcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+#newtask {
+  font-size: 30px;
+  width: 85%;
+  border-radius: 10px;
+  border: 0;
+  height: 40px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 5px;
+  background-color: #5408ff;
+  color: white;
+  font-family: "Comfortaa";
+}
+
+#newtask::placeholder {
+  color: white;
+}
+
+.button {
+  border-radius: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #5408ff;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  margin-top: 30px;
+  background-color: #5408ff;
+  border-radius: 10px;
+  padding: 5px 6px;
+}
+
+li {
+  list-style: none;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  background-color: #11111c;
+  border-radius: 15px;
+  color: white;
+  padding: 10px;
+  margin: 5px auto;
+  justify-content: space-between;
+}
+
+.erasebutton {
+  border-radius: 10px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #5408ff;
+  border: 0;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.erasebutton:hover {
+  transform: scale(1.1);
+}
+
+.done {
+  background-color: lightgrey;
+  text-decoration: line-through;
+}
